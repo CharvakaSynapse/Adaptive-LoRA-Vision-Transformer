@@ -38,7 +38,16 @@
 | **Wall-clock**       | **1,903s (~32 min)**   | 2,279s (~38 min)   |
 
 ---
+## 🏆 Results Visualization
 
+<img src="./cifar100_acc_vs_time_refined.PNG" alt="CIFAR-100 Accuracy vs Training Time" width="600"/>
+
+**Figure:** *Accuracy vs. Training Time for Classifier-Only, FC-LoRA (ours), and Full Fine-Tuning on CIFAR-100 (DeiT-Base, L40S GPU).*
+
+- FC-LoRA achieves >98% of full fine-tuning accuracy in less than half the compute.
+- All results are from our reproducible runs (see table above).
+
+---
 ## ⚡ How It Works
 
 - **Attention-Only LoRA:**  
