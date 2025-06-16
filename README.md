@@ -42,6 +42,7 @@
 
 <img src="./cifar100_acc_vs_time_refined.PNG" alt="CIFAR-100 Accuracy vs Training Time" width="600"/>
 
+
 **Figure:** *Accuracy vs. Training Time for Classifier-Only, FC-LoRA (ours), and Full Fine-Tuning on CIFAR-100 (DeiT-Base, L40S GPU).*
 
 - FC-LoRA achieves >98% of full fine-tuning accuracy in less than half the compute.
