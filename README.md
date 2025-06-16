@@ -1,4 +1,4 @@
-# FC-LoRA ⚡ Attention-Only Fisher-Grad-Covariance LoRA for DeiT
+# FC-LoRA : Attention-Only Fisher-Grad-Covariance LoRA for DeiT
 
 > **Train 0.23 % of DeiT-Base, keep ≥99 % of its accuracy.**
 
