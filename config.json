@@ -1,0 +1,44 @@
+{
+  "batch_size": 32,
+  "seed": 78,
+  "training": {
+    "epochs": 15,
+    "learning_rate": 5e-4,
+    "lr_warmup_epochs": 5,
+    "lr_min": 1e-4,
+    "adamw_lr": 5e-4,
+    "temp_optimizer_lr": 5e-5,
+    "gradient_clip_norm": 1.0,
+    "label_smoothing": 0.1,
+    "cutmix_alpha": 1.0,
+    "cutmix_prob": 0.5
+  },
+  "data": {
+    "val_split": 0.2,
+    "image_size": [224, 224],
+    "normalize_mean": [0.5071, 0.4867, 0.4408],
+    "normalize_std": [0.2675, 0.2565, 0.2761]
+  },
+  "model": {
+    "pretrained_model": "facebook/deit-base-distilled-patch16-224",
+    "num_classes": 100,
+    "lora": {
+      "r_max": 16,
+      "r_min": 1,
+      "r_total": 100,
+      "lora_alpha": 16,
+      "lora_dropout": 0.1,
+      "importance_weights": {
+        "fisher": 0.6,
+        "grad": 0.2,
+        "cov": 0.2
+      }
+    }
+  },
+  "paths": {
+    "best_model": "deit_cifar100_hybrid_LoRA_PEFT.pt",
+    "final_model": "deit_cifar100_hybrid_LoRA_PEFT_final.pt",
+    "plot_output": "deit_cifar100_hybrid_LoRA_PEFT.png",
+    "data_root": "./data"
+  }
+}
